@@ -11,12 +11,17 @@ Napi::Value DecodeBuffer(const Napi::CallbackInfo &info) {
 
   mp3dec_load_buf(&mp3d, buf, buf_size, &f_info, 0, 0);
   return Napi::Buffer<mp3d_sample_t>::New(
-      info.Env(), f_info.buffer, f_info.samples - sizeof(mp3d_sample_t));
+    info.Env(),
+    f_info.buffer,
+    f_info.samples - sizeof(mp3d_sample_t)
+  );
 }
 
 Napi::Object Init(Napi::Env env, Napi::Object exports) {
-  exports.Set(Napi::String::New(env, "decodeBuffer"),
-              Napi::Function::New(env, DecodeBuffer));
+  exports.Set(
+    Napi::String::New(env, "decodeBuffer"),
+    Napi::Function::New(env, DecodeBuffer)
+  );
   return exports;
 }
 
