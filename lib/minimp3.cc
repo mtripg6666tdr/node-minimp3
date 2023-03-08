@@ -23,7 +23,7 @@ Napi::Value DecodeBuffer(const Napi::CallbackInfo &info) {
   );
   result.Set(
     Napi::String::New(env, "samplingRate"),
-    f_info.samples
+    f_info.hz
   );
   result.Set(
     Napi::String::New(env, "buffer"),

@@ -4,7 +4,7 @@ const { Transform } = require('stream')
 
 class Decoder extends Transform {
   /** @type {import('stream').TransformOptions & {maximumChunkLength: number}} */
-  constructor(options){
+  constructor(options = {}){
     super(options);
     this.maximumChunkLength = options.maximumChunkLength || 100000000;
     /** @type {number} */
