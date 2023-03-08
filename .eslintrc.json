@@ -1,3 +1,13 @@
 {
-    "extends": "standard"
+    "root": true,
+    "extends": [
+        "eslint:recommended"
+    ],
+    "plugins": [
+        "node",
+        "import"
+    ],
+    "env": {
+        "node": true
+    }
 }
