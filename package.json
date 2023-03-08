@@ -1,5 +1,5 @@
 {
-  "name": "minimp3",
+  "name": "@mtripg6666tdr/minimp3",
   "version": "1.0.0",
   "description": "Native binding for minimp3",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johangu/node-minimp3.git"
+    "url": "git+https://github.com/mtripg6666tdr/node-minimp3.git"
   },
   "keywords": [
     "mp3",
@@ -17,23 +17,23 @@
     "audio"
   ],
   "author": "Johan Guttormsson <johan@jgsoft.nl>",
+  "contributors": [
+    "mtripg6666tdr"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/johangu/node-minimp3/issues"
+    "url": "https://github.com/mtripg6666tdr/node-minimp3/issues"
   },
-  "homepage": "https://github.com/johangu/node-minimp3#readme",
+  "homepage": "https://github.com/mtripg6666tdr/node-minimp3#readme",
   "dependencies": {
     "bindings": "^1.5.0",
-    "node-addon-api": "^1.6.2"
+    "node-addon-api": "^6.0.0"
   },
   "devDependencies": {
-    "debug": "^4.1.1",
-    "eslint": "^5.15.1",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "prettier-eslint-cli": "^4.7.1"
+    "@types/node": "^18.14.6",
+    "eslint": "^8.35.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-standard": "^4.1.0"
   }
 }
