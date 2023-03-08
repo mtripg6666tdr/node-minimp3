@@ -11,15 +11,15 @@ provide a decode stream to NodeJS.
 Installation via npm:
 
 ``` bash
-$ npm i minimp3
+$ npm i @mtripg6666tdr/minimp3
 ```
 
 ## Example usage
 
 This is an example of how to decode an mp3-file and pipe the output to `node-speaker` ([TooTallNate/node-speaker](https://www.github.com/TooTallNate/node-speaker))
 
-``` javascript
-const Decoder = require('minimp3')
+```js
+const Decoder = require('@mtripg6666tdr/minimp3')
 const Speaker = require('speaker')
 const { createReadStream } = require('fs')
 
